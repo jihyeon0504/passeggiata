@@ -1,0 +1,12 @@
+.header { max-width: 1000px; margin: 0 auto;} 
+.header .inner { max-width: 100%; height: 6.25rem; display: flex; align-items: center; justify-content: space-between; } 
+.header .inner .logo{width: 9.375rem;}
+.header .inner .logo a{display: block;}
+.header .inner .logo img{width: 100%; height: 100%;}
+.header .inner .navbar{display: flex;align-items: center;height: 100%;gap: 1.875rem;}
+.header .inner .navbar .menu{
+    height: 100%;
+}
+.header .inner .navbar .menu  a span{
+font-size: 16px;font-weight:700; letter-spacing: -0.5px;
+}
