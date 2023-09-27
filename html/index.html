@@ -18,33 +18,33 @@
         <header>
             <div class="header">
                 <div class="inner">
-                    <h1 class="logo"><a href="#">
+                    <h1 class="logo"><a href="#main">
                             <img src="./img/logo.svg" alt="파세지아타">
                         </a></h1>
                     <div class="nav">
                         <ul class="navbar">
                             <li class="menu">
-                                <a href="#">
+                                <a href="#brand">
                                     <span>브랜드소개</span>
                                 </a>
                             </li>
                             <li class="menu">
-                                <a href="#">
+                                <a href="#brand-content">
                                     <span>파세지아타</span>
                                 </a>
                             </li>
                             <li class="menu">
-                                <a href="#">
+                                <a href="#franchise">
                                     <span>프랜차이즈</span>
                                 </a>
                             </li>
                             <li class="menu">
-                                <a href="#">
+                                <a href="#hybrid">
                                     <span>하이브리드</span>
                                 </a>
                             </li>
                             <li class="menu">
-                                <a href="#">
+                                <a href="#contact">
                                     <span>문의하기</span>
                                 </a>
                             </li>
@@ -55,7 +55,7 @@
         </header>
         <div class="site-content">
             <main>
-                <section class="main">
+                <section class="main" id="main">
                     <div class="top_visual">
                         <div class="img">
                             <img src="./img/main.jpg" alt="파세지아타">
@@ -77,7 +77,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="brand">
+                <section class="brand" id="brand">
                     <div class="inner">
                         <div class="bgroup">
                             <div class="logo">
@@ -89,7 +89,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="brand-content">
+                <section class="brand-content" id="brand-content">
                     <div class="inner">
                         <div class="title">
                             <div class="tit">
@@ -130,7 +130,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="franchise">
+                <section class="franchise" id="franchise">
                     <div class="inner">
                         <div class="content-wrap">
                             <div class="content">
@@ -244,7 +244,7 @@
                         swiper1.controller.control = pagingSwiper;
                     </script>
                 </section>
-                <section class="hybrid">
+                <section class="hybrid" id="hybrid">
                     <div class="inner">
                         <div class="title">
                             <div class="tit">
@@ -315,7 +315,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="contact">
+                <section class="contact" id="contact">
                     <div class="inner">
                         <div class="title">
                             <div class="tit">
@@ -331,25 +331,44 @@
                                 <fieldset>
                                     <legend class="hidden">문의하기 입력폼</legend>
                                     <div class="wrap">
-                                    <div class="col">
-                                        <div class="input">
-                                            <label for="name">성함(Name)</label>
-                                            <input type="text" id="name" placeholder="성함을 입력해주세요.">
+                                        <div class="col">
+                                            <div class="input">
+                                                <label for="name">성함(Name)</label>
+                                                <input type="text" id="name" placeholder="성함을 입력해주세요.">
+                                            </div>
+                                            <div class="input">
+                                                <label for="number">연락 받으실 번호(Phone number)</label>
+                                                <input type="text" id="number" placeholder="휴대폰 번호를 입력해주세요.">
+                                            </div>
                                         </div>
                                         <div class="input">
-                                            <label for="number">연락 받으실 번호(Phone number)</label>
-                                            <input type="text" id="number" placeholder="휴대폰 번호를 입력해주세요.">
+                                            <label for="mail">연락 받으실 메일 (E-mail)</label>
+                                            <input type="email" id="mail" placeholder="메일을 입력해주세요.">
+                                        </div>
+                                        <div class="textarea">
+                                            <label for="question">문의내용 (Question)</label>
+                                            <textarea name="question" id="question"></textarea>
+                                        </div>
+                                        <div class="collect-agree">
+                                            <div class="tit"> 개인정보 수집 · 이용에 대한 안내 (필수 수집 · 이용항목)</div>
+                                            <div class="txt">
+                                                <p>파세지아타에서는 고객 문의사항 접수 및 답변을 위해 아래와 같이 개인정보를 수집, 이용합니다.</p>
+                                                <p>목적 : 고객 문의사항 접수 및 답변</p>
+                                                <p>항목 : 성함, 연락처, 이메일</p>
+                                                <p>보유기간 : 수집일로부터 1년</p>
+                                                <p>서비스 이용에 필요한 최소한의 수집 및 이용에 동의하지 않을 수 있으나 동의를 거부할 경우 서비스 이용에 제한이 있을 수
+                                                    있습니다</p>
+                                            </div>
+                                            <div class="agree">
+                                                <input type="checkbox" id="agreeCheck">
+                                                <label for="agreeCheck">동의합니다</label>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="input">
-                                        <label for="mail">연락 받으실 메일 (E-mail)</label>
-                                        <input type="email" id="mail" placeholder="메일을 입력해주세요.">
+                                    <div class="button">
+                                        <button class="btn"><span>문의하기</span><img src="./img/left.svg"
+                                                alt="문의하기"></button>
                                     </div>
-                                    <div class="textarea">
-                                        <label for="question">문의내용 (Question)</label>
-                                        <textarea name="question" id="question"></textarea>
-                                    </div>
-                                </div>
                                 </fieldset>
                             </div>
                         </form>
@@ -357,6 +376,26 @@
                 </section>
             </main>
         </div>
+        <footer>
+            <div class="footer">
+                <div class="inner">
+                    <div class="foot">
+                        <div class="division">
+                    <h2><img src="./img/logo.svg" alt="파세지아타"></h2>
+                    <div class="address">
+                        <p>(42250)대전광역시 서구 청사로 136, 12층 R1223호</p>
+                        <p>대표전화 : 010 - 2562 -5532</p>
+                    </div>
+                </div>
+                <div class="division">
+                    <div class="copyright">
+                        <p>Copyright by © kspgs</p>
+                    </div>
+                </div>
+                </div>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 
