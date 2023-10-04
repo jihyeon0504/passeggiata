@@ -154,9 +154,11 @@ header .m-header.act .bg-shadow { display: block; }
 .contact .form .wrap .col { width: 100%; display: flex; flex-direction: row; justify-content: space-between; align-items: center; gap: 100px; } 
 .contact .form .wrap .input { width: 100%; display: flex; flex-direction: column; align-items: flex-start; gap: 10px; } 
 .contact .form .wrap label { color: #393B3C; font-size: 14px; font-weight: 700; line-height: 1.4; letter-spacing: -0.75px; } 
-.contact .form .wrap input { width: 100%; border: none; padding: 10px; border-bottom: 1px solid #393B3C; color: #393B3C; font-size: 13px; font-weight: 400; letter-spacing: -0.75px; } 
+.contact .form .wrap input { width: 100%; border: none; padding: 10px; border-bottom: 1px solid #393B3C; color: #393B3C; font-size: 13px; font-weight: 400; letter-spacing: -0.75px;transition: all 0.3s; } 
+.contact .form .wrap input:focus{border-bottom: 1px solid #6fbb3e;}
 .contact .form .wrap .textarea { width: 100%; display: flex; flex-direction: column; align-items: flex-start; gap: 10px; } 
-.contact .form .wrap .textarea textarea { width: 100%; border: 1px solid #727272; border-radius: 5px; height: 130px; resize: none; padding: 10px; font-size: 14px; letter-spacing: -0.25px; line-height: 1.4; } 
+.contact .form .wrap .textarea textarea { width: 100%; border: 1px solid #727272; border-radius: 5px; height: 130px; resize: none; padding: 10px; font-size: 14px; letter-spacing: -0.25px; line-height: 1.4; }
+.contact .form .wrap .textarea textarea:focus{border: 1px solid #6fbb3e;} 
 .contact .form .wrap .collect-agree { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; width: 100%; padding-bottom: 20px; border-bottom: 2px solid #393B3C; } 
 .contact .form .wrap .collect-agree .tit { color: #393B3C; font-size: 14px; font-weight: 700; line-height: 1.4; letter-spacing: -0.75px; } 
 .contact .form .wrap .collect-agree .txt { color: #727272; font-size: 12px; font-weight: 400; line-height: 1.4; letter-spacing: -.75px; } 
