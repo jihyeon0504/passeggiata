@@ -8,10 +8,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="./js/ui.js"></script>
   </head>
 
@@ -107,7 +109,7 @@
                 <img src="./img/main.jpg" alt="파세지아타" />
               </div>
               <div class="hgroup">
-                <div class="text">
+                <div class="text" data-aos="fade-right">
                   <div class="title">
                     <div class="tit">
                       <h3>파크 골프의 새로운 기준을 제시</h3>
@@ -128,10 +130,14 @@
           <section class="brand" id="brand">
             <div class="inner">
               <div class="bgroup">
-                <div class="logo">
+                <div class="logo" data-aos="fade-right">
                   <img src="./img/logo.svg" alt="파세지아타" />
                 </div>
-                <div class="content">
+                <div
+                  class="content"
+                  data-aos="fade-left"
+                  data-aos-duration="1500"
+                >
                   <p>
                     이탈리아만의 독특한 문화로서 우리말로 산책을 의미하는 단어인
                     파세지아타는 해질무력 사람들이 모여 마을을 천천히 걷는
@@ -150,15 +156,14 @@
                 <div class="con">
                   <p>
                     빠르게 급증하고 있는 파크골프 동호인에 비해서 시설이
-                    절대적으로 부족하게 되면서
-                    발생하는 사회적 문제를 해결할 수 있는 파세지아타는 날씨나
-                    환경에 구애받지 않고
-                    실내에서 파크골프를 즐길 수 있습니다.
+                    절대적으로 부족하게 되면서 발생하는 사회적 문제를 해결할 수
+                    있는 파세지아타는 날씨나 환경에 구애받지 않고 실내에서
+                    파크골프를 즐길 수 있습니다.
                   </p>
                 </div>
               </div>
               <div class="box-wrap">
-                <div class="box">
+                <div class="box" data-aos="fade-up" data-aos-duration="500">
                   <div class="box-con">
                     <div class="img">
                       <img src="./img/sec3_01.png" alt="파크골프시스템1" />
@@ -171,7 +176,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="box">
+                <div class="box" data-aos="fade-up" data-aos-duration="700">
                   <div class="box-con">
                     <div class="img">
                       <img src="./img/sec3_02.png" alt="파크골프시스템1" />
@@ -184,7 +189,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="box">
+                <div class="box" data-aos="fade-up" data-aos-duration="900">
                   <div class="box-con">
                     <div class="img">
                       <img src="./img/sec3_03.png" alt="파크골프시스템1" />
@@ -374,7 +379,7 @@
                 </div>
               </div>
               <div class="box-wrap">
-                <div class="box">
+                <div class="box" data-aos="fade-up" data-aos-duration="500">
                   <div class="box-con">
                     <div class="img">
                       <img src="./img/sec5_01.png" alt="관광객유치" />
@@ -388,7 +393,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="box">
+                <div class="box" data-aos="fade-up" data-aos-duration="700">
                   <div class="box-con">
                     <div class="img">
                       <img src="./img/sec5_02.png" alt="브랜드가치제고" />
@@ -402,7 +407,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="box">
+                <div class="box" data-aos="fade-up" data-aos-duration="900">
                   <div class="box-con">
                     <div class="img">
                       <img src="./img/sec5_03.png" alt="건강증진" />
@@ -567,4 +572,8 @@
       </footer>
     </div>
   </body>
+  <script>
+    // AOS
+    AOS.init();
+  </script>
 </html>

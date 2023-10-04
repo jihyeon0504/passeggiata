@@ -1,10 +1,11 @@
 //  스크롤 헤더
-$(function(){
-    $(window).scroll(function(){
-        if($(document).scrollTop() > 30){
+$(function () {
+    $(window).scroll(function () {
+        if ($(document).scrollTop() > 30) {
             $("header").addClass('fixed')
-        }else{$("header").removeClass('fixed')
-    };
+        } else {
+            $("header").removeClass('fixed')
+        };
     })
     //네비 스크롤이동
     function scrollPosition() {
@@ -22,15 +23,16 @@ $(function(){
     }
     $(window).scroll(function () {
         scrollPosition();
-    });    
-    let navBlock = $('.nav');
+    });
+    let navBlock = $('.nav, .m-nav');
     navBlock.find('a').click(function (e) {
         e.preventDefault();
+        $(".bg-shadow").trigger("click");
         $(document).off('scroll');
         let block = $(this).attr('href');
         let blockPosition = $(block).offset().top;
         $('html, body').animate({
-            scrollTop: blockPosition - 100
+            scrollTop: blockPosition - 150
         }, 600, function () {
             scrollPosition();
         });
@@ -38,9 +40,9 @@ $(function(){
 });
 
 //모바일해더
-$(function(){
+$(function () {
     //메뉴닫기
-    
+
     //햄버거아이콘
     $(".m-btn").click(function () {
         $(this).toggleClass('act');
@@ -48,10 +50,12 @@ $(function(){
         $(".bg-shadow").toggleClass('act');
         $(".m-nav").stop().slideToggle();
     })
-    $(".bg-shadow").click(function(){
+    $(".bg-shadow").click(function () {
         $(this).removeClass('act');
         $(".m-header").removeClass('act');
         $(".m-btn").removeClass('act');
         $(".m-nav").slideUp();
     })
 })
+
+
