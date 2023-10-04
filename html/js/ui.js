@@ -8,7 +8,7 @@ $(function(){
     })
     //네비 스크롤이동
     function scrollPosition() {
-        let navBlock = $('.nav'),
+        let navBlock = $('.nav, .m-nav'),
             scrollPos = $(window).scrollTop();
         navBlock.find('a').each(function () {
             let block = $($(this).attr('href'));
@@ -36,3 +36,22 @@ $(function(){
         });
     });
 });
+
+//모바일해더
+$(function(){
+    //메뉴닫기
+    
+    //햄버거아이콘
+    $(".m-btn").click(function () {
+        $(this).toggleClass('act');
+        $(".m-header").toggleClass('act');
+        $(".bg-shadow").toggleClass('act');
+        $(".m-nav").stop().slideToggle();
+    })
+    $(".bg-shadow").click(function(){
+        $(this).removeClass('act');
+        $(".m-header").removeClass('act');
+        $(".m-btn").removeClass('act');
+        $(".m-nav").slideUp();
+    })
+})
