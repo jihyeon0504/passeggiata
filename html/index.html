@@ -572,12 +572,15 @@
                       </div>
                     </div>
                     <div class="button">
-                      <button class="btn contactBtn" type="button">
+                      <button
+                        class="btn"
+                        type="button"
+                        onclick="openPopup('alert01')"
+                      >
                         <div class="inn">
                           <span>문의하기</span
                           ><img src="./img/left.svg" alt="문의하기" />
                         </div>
-                        <span class="spinner"></span>
                       </button>
                     </div>
                   </fieldset>
@@ -608,8 +611,56 @@
         </div>
       </footer>
     </div>
+    <section class="popup" id="alert01">
+      <div class="alert-box">
+        <article class="article">
+          <div class="con">
+            <p>올바른 이메일 형식이 아닙니다.<br />다시 한번 확인해주세요.</p>
+          </div>
+        </article>
+        <div class="button">
+          <button class="bt_okay" type="button" onclick="closePopup('alert01')">
+            확인
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="popup" id="alert02">
+      <div class="alert-box">
+        <article class="article">
+          <div class="con">개인정보 수집 · 이용에 동의해주세요.</div>
+        </article>
+        <div class="button">
+          <button class="bt_okay" type="button" onclick="closePopup('alert02')">
+            확인
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="popup" id="alert03">
+      <div class="alert-box">
+        <article class="article">
+          <div class="con">문의하신 내용을 전송 중입니다.</div>
+        </article>
+      </div>
+    </section>
   </body>
   <script>
+    //팝업 확인창
+    function openPopup(id, opt) {
+      posY = $(window).scrollTop();
+      let $el = $("#" + id);
+      $el.addClass("act");
+      $("body").addClass("not_scroll");
+      $("body").css("top", -posY);
+    }
+    function closePopup(id, opt) {
+      let $el = $("#" + id);
+      $el.removeClass("act");
+      $("body").removeClass("not_scroll");
+      posY = $(window).scrollTop(posY);
+    }
+
     // AOS
     AOS.init();
   </script>

@@ -15,7 +15,7 @@ $(function () {
             scrollPos = $(window).scrollTop();
         navBlock.find('a').each(function () {
             let block = $($(this).attr('href'));
-            if ((block.position().top) <= scrollPos + 300 && (block.position().top) + block.outerHeight() > scrollPos) {
+            if ((block.position().top) <= scrollPos + 400 && (block.position().top) + block.outerHeight() > scrollPos) {
                 navBlock.find('li').removeClass('active');
                 $(this).parent('li').addClass('active');
             } else {
@@ -34,7 +34,7 @@ $(function () {
         let block = $(this).attr('href');
         let blockPosition = $(block).offset().top;
         $('html, body').animate({
-            scrollTop: blockPosition - 150
+            scrollTop: blockPosition - 80
         }, 600, function () {
             scrollPosition();
         });
@@ -56,25 +56,4 @@ $(function () {
         $(".m-btn").removeClass('act');
         $(".m-nav").slideUp();
     })
-})
-
-//문의하기 버튼
-$(function () {
-    let buttons = document.querySelectorAll('.contactBtn');
-    Array.prototype.slice.call(buttons).forEach(function (button) {
-        let resetTimeout;
-        button.addEventListener('click', function () {
-            if (typeof button.getAttribute('data-loading') === 'string') {
-                button.removeAttribute('data-loading');
-            }
-            else {
-                button.setAttribute('data-loading', '');
-            }
-            clearTimeout(resetTimeout);
-            resetTimeout = setTimeout(function () {
-                button.removeAttribute('data-loading');
-            }, 2000);
-        }, false);
-
-    });
 })
