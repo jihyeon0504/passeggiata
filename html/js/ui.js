@@ -41,8 +41,6 @@ $(function () {
 
 //모바일해더
 $(function () {
-    //메뉴닫기
-
     //햄버거아이콘
     $(".m-btn").click(function () {
         $(this).toggleClass('act');
@@ -58,4 +56,23 @@ $(function () {
     })
 })
 
+//문의하기 버튼
+$(function () {
+    let buttons = document.querySelectorAll('.contactBtn');
+    Array.prototype.slice.call(buttons).forEach(function (button) {
+        let resetTimeout;
+        button.addEventListener('click', function () {
+            if (typeof button.getAttribute('data-loading') === 'string') {
+                button.removeAttribute('data-loading');
+            }
+            else {
+                button.setAttribute('data-loading', '');
+            }
+            clearTimeout(resetTimeout);
+            resetTimeout = setTimeout(function () {
+                button.removeAttribute('data-loading');
+            }, 2000);
+        }, false);
 
+    });
+})
