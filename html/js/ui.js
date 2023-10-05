@@ -7,13 +7,15 @@ $(function () {
             $("header").removeClass('fixed')
         };
     })
+})
+$(function () {
     //네비 스크롤이동
     function scrollPosition() {
-        let navBlock = $('.nav, .m-nav'),
+        let navBlock = $('.nav'),
             scrollPos = $(window).scrollTop();
         navBlock.find('a').each(function () {
             let block = $($(this).attr('href'));
-            if ((block.position().top) <= scrollPos + 400 && (block.position().top) + block.outerHeight() > scrollPos) {
+            if ((block.position().top) <= scrollPos + 300 && (block.position().top) + block.outerHeight() > scrollPos) {
                 navBlock.find('li').removeClass('active');
                 $(this).parent('li').addClass('active');
             } else {

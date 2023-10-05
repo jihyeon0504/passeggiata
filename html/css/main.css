@@ -5,17 +5,18 @@ header .header .inner { max-width: 100%; height: 6.25rem; display: flex; align-i
 header .header .inner .logo { width: 9.375rem; } 
 header .header .inner .logo a { display: block; } 
 header .header .inner .logo img { width: 100%; height: 100%; filter: brightness(100); } 
+header .header .inner .nav { display: block; height: 100%; line-height: 100px; } 
 header .header .inner .navbar { display: flex; align-items: center; height: 100%; gap: 1.875rem; } 
 header .header .inner .navbar .menu { height: 100%; } 
-header .header .inner .navbar .menu { font-size: 1rem; font-weight: 700; letter-spacing: -0.5px; color: #fff; transition: all 0.2s; } 
-header .header .inner .navbar .menu:hover { color: #6FBB3E; } 
-
+header .header .inner .navbar .menu a { display: block; height: 100%; font-size: 1rem; font-weight: 700; letter-spacing: -0.5px; color: #fff; transition: all 0.2s; } 
+header .header .inner .navbar .menu:hover a { color: #6FBB3E; } 
+header .header .inner .navbar menu.active a { color: #6FBB3E; } 
 /* 스크롤헤더 */
 header.fixed { background-color: #fff; box-shadow: 4px 4px 30px #b0b0b050; } 
 header.fixed .header .inner .logo img { filter: brightness(1); } 
-header.fixed .header .inner .navbar .menu { color: #393B3C; } 
-header.fixed .header .inner .navbar .menu:hover { color: #6FBB3E; } 
-header.fixed .header .inner .navbar .menu.active { color: #6FBB3E; } 
+header.fixed .header .inner .navbar .menu a { color: #393B3C; } 
+header.fixed .header .inner .navbar .menu:hover a { color: #6FBB3E; } 
+header.fixed .header .inner .navbar .menu.active a { color: #6FBB3E; } 
 
 /* 모바일헤더 */
 header .m-header { position: fixed; width: 100%; z-index: 9999; height: 80px; display: none; } 
