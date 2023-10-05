@@ -54,6 +54,6 @@ a { color: inherit; text-decoration: inherit; }
  color: #8C8C8C; } 
 :-moz-placeholder { /* Firefox 18- */
  color: #8C8C8C; } 
-input:focus { outline: none} 
+input:focus { outline: none } 
 
-textarea:focus { outline: none;} 
+textarea:focus { outline: none; } 
