@@ -58,21 +58,3 @@ $(function () {
         $(".m-nav").slideUp();
     })
 })
-
-
-//팝업 확인창
-function openPopup(id, opt) {
-    posY = $(window).scrollTop();
-    let $el = $("#" + id);
-    $el.addClass("act");
-    $("body").addClass("not_scroll");
-    $("header").addClass('act');
-    $("body").css("top", -posY);
-}
-function closePopup(id, opt) {
-    let $el = $("#" + id);
-    $el.removeClass("act");
-    $("body").removeClass("not_scroll");
-    $("header").removeClass('act');
-    posY = $(window).scrollTop(posY);
-}

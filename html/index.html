@@ -572,11 +572,15 @@
                       </div>
                     </div>
                     <div class="button">
+<<<<<<< HEAD
                       <button
                         class="btn"
                         type="button"
                         onclick="openPopup('alert01')"
                       >
+=======
+                      <button class="btn" type="button"  onclick="openPopup('alert01')" >
+>>>>>>> 70cfc7c6cbd2fac88ab0ec2753997f8dad08d246
                         <div class="inn">
                           <span>문의하기</span
                           ><img src="./img/left.svg" alt="문의하기" />
@@ -646,6 +650,21 @@
     </section>
   </body>
   <script>
+    //팝업 확인창
+    function openPopup(id,opt){
+      posY = $(window).scrollTop();
+      let $el = $('#' + id);
+      $el.addClass('act');
+      $('body').addClass('not_scroll');
+      $("body").css("top", -posY);
+    }
+    function closePopup(id,opt){
+      let $el = $('#' + id);
+      $el.removeClass('act');
+      $('body').removeClass('not_scroll');
+      posY = $(window).scrollTop(posY);
+    }
+
     // AOS
     AOS.init();
   </script>
