@@ -184,7 +184,12 @@ footer .footer .foot .division .copyright p { color: #929394; font-size: 14px; f
 
 
 /* 팝업 */
-
+.not_scroll header.act { background-color: #fff; box-shadow: 4px 4px 30px #b0b0b050; } 
+.not_scroll header.act .header .inner .logo img { filter: brightness(1); } 
+.not_scroll header.act .header .inner .navbar .menu a { color: #393B3C; } 
+.not_scroll header.act .header .inner .navbar .menu.active a { color: #6FBB3E; } 
+.not_scroll header.act .m-header .m-inn h2 img { filter: brightness(1); } 
+.not_scroll header.act .m-header .m-inn .m-btn span { background-color: #393B3C; } 
 .popup { display: none; position: fixed; z-index: 9000; top: 0; bottom: 0; right: 0; left: 0; background: rgb(0 7 18 / 30%); animation: fade-out 1s; } 
 .popup.act { display: flex !important; justify-content: center; align-items: center; animation: fade-in 1s; } 
 .popup .alert-box { display: flex; flex-direction: column; gap: 30px; width: 400px; padding: 30px; background: #fff; border-radius: 4px; box-shadow: 8px 8px 20px 0 rgb(0 0 0 / 20%); } 
