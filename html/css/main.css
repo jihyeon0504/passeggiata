@@ -65,7 +65,7 @@ header .m-header.act .bg-shadow { display: block; }
 .main .hgroup .title .tit h3 { font-family: 'GmarketSansBold'; font-size: 1.5625rem; color: #fff; letter-spacing: -0.5px; } 
 .main .hgroup .title .con { display: flex; flex-direction: column; align-items: flex-start; gap: 10px } 
 .main .hgroup .title .con h4 { font-size: 20px; font-weight: 500; color: #fff; } 
-.main .hgroup .title .con p { width: 24rem; font-size: 18px; letter-spacing: -0.75px; line-height: 1.4; word-break: keep-all; color: #fff; font-weight: 400; } 
+.main .hgroup .title .con p { max-width: 27rem; width: 100%; font-size: 18px; letter-spacing: -0.75px; line-height: 1.4; word-break: keep-all; color: #fff; font-weight: 400; } 
 
 /* 브랜드소개 */
 .brand { width: 100%; height: 100%; padding: 12.5rem 0; } 
@@ -73,7 +73,7 @@ header .m-header.act .bg-shadow { display: block; }
 .brand .inner .bgroup { display: flex; justify-content: space-between; align-items: center; flex-direction: row; gap: 30px; } 
 .brand .inner .bgroup .logo { min-width: 18.75rem } 
 .brand .inner .bgroup .logo img { width: 100%; height: 100%; object-fit: cover; } 
-.brand .inner .bgroup .content { max-width: 50rem; width: 100%; } 
+.brand .inner .bgroup .content { max-width: 54rem; width: 100%; } 
 .brand .inner .bgroup .content p { font-size: 1.1rem; line-height: 2; letter-spacing: -0.75px; font-weight: 500; color: #333; word-break: keep-all; } 
 .brand .inner .bgroup .content .bold { font-size: 2rem; font-weight: 700; text-align: center; } 
 .brand .inner .bgroup .content .bold b { font-weight: 900; color: #689C46; } 
