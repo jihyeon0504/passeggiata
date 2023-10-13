@@ -113,7 +113,7 @@ header .m-header.act .bg-shadow { display: block; }
 .franchise .wrap .case-wrap .box .title p { font-size: 50px; font-weight: 900; line-height: 1.4; letter-spacing: -0.75px; } 
 .franchise .wrap .case-wrap .box .title p.lightGreen { width: 20rem; word-break: keep-all; font-size: 50px; font-weight: 900; line-height: 1.4; letter-spacing: -0.75px; color: #689C46; } 
 .franchise .wrap .case-wrap .box .text { width: 15.625rem; } 
-.franchise .wrap .case-wrap .box .text p { font-size: 18px; line-height: 1.4; color: #3a3a3a; letter-spacing: -0.75px; } 
+.franchise .wrap .case-wrap .box .text p { font-size: 18px; line-height: 1.4; color: #3a3a3a; letter-spacing: -0.75px;word-break: keep-all; } 
 
 
 
