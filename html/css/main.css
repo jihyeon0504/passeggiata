@@ -70,11 +70,13 @@ header .m-header.act .bg-shadow { display: block; }
 /* 브랜드소개 */
 .brand { width: 100%; height: 100%; padding: 12.5rem 0; } 
 .brand .inner { width: 100%; max-width: 80rem; margin: 0 auto; padding: 0 10px; } 
-.brand .inner .bgroup { display: flex; justify-content: space-between; align-items: center; flex-direction: row; } 
-.brand .inner .bgroup .logo { width: 18.75rem } 
+.brand .inner .bgroup { display: flex; justify-content: space-between; align-items: center; flex-direction: row; gap: 30px; } 
+.brand .inner .bgroup .logo { min-width: 18.75rem } 
 .brand .inner .bgroup .logo img { width: 100%; height: 100%; object-fit: cover; } 
-.brand .inner .bgroup .content { width: 35rem; } 
-.brand .inner .bgroup .content p { font-size: 1.125rem; line-height: 2; font-weight: 500; color: #333; } 
+.brand .inner .bgroup .content { max-width: 50rem; width: 100%; } 
+.brand .inner .bgroup .content p { font-size: 1.1rem; line-height: 2; letter-spacing: -0.75px; font-weight: 500; color: #333; word-break: keep-all; } 
+.brand .inner .bgroup .content .bold { font-size: 2rem; font-weight: 700; text-align: center; } 
+.brand .inner .bgroup .content .bold b { font-weight: 900; color: #689C46; } 
 .brand-content { padding: 6.25rem 0; width: 100%; background-color:#F9F9F9; display: block; } 
 .brand-content .inner { width: 100%; max-width: 80rem; margin: 0 auto; padding: 0 10px; } 
 .brand-content .inner .title { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 30px; } 
@@ -112,8 +114,8 @@ header .m-header.act .bg-shadow { display: block; }
 .franchise .wrap .case-wrap .box .txt { display: flex; flex-direction: column; align-items: flex-start; gap: 20px; } 
 .franchise .wrap .case-wrap .box .title p { font-size: 50px; font-weight: 900; line-height: 1.4; letter-spacing: -0.75px; } 
 .franchise .wrap .case-wrap .box .title p.lightGreen { width: 20rem; word-break: keep-all; font-size: 50px; font-weight: 900; line-height: 1.4; letter-spacing: -0.75px; color: #689C46; } 
-.franchise .wrap .case-wrap .box .text { width: 15.625rem; } 
-.franchise .wrap .case-wrap .box .text p { font-size: 18px; line-height: 1.4; color: #3a3a3a; letter-spacing: -0.75px;word-break: keep-all; } 
+.franchise .wrap .case-wrap .box .text { max-width: 23.625rem; width: 100%; } 
+.franchise .wrap .case-wrap .box .text p { font-size: 18px; line-height: 1.4; color: #3a3a3a; letter-spacing: -0.75px; word-break: keep-all; } 
 
 
 
@@ -226,6 +228,9 @@ footer .footer .foot .division .copyright p { color: #929394; font-size: 14px; f
  
 /* 반응형 */
 @media screen and (max-width:1440px){
+ .brand .inner .bgroup .logo { min-width: 16rem; } 
+ .brand .inner .bgroup .content p { font-size: 1rem; } 
+ .brand .inner .bgroup .content .bold { font-size: 1.5rem; } 
  .franchise .inner .content-wrap .swiper-button-prev { left: 0; top: 75%; } 
  .franchise .inner .content-wrap .swiper-button-next { right: 0; top: 75%; } 
  }
